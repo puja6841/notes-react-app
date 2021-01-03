@@ -1,0 +1,634 @@
+body {
+   background: black;
+   margin-bottom: 3em;
+
+   color: #fff;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB, #ffafbd, #ffc3a0, #2193b0, #6dd5ed, #cc2b5e, #753a88, #ee9ca7, #ffdde1, #42275a, #734b6d, #bdc3c7, #2c3e50, #de6262, #ffb88c, #43cea2 ,  #185a9d, #4568dc, #b06ab3, #ffd89b,  #19547b,#36d1dc, #5b86e5);
+  background-size:  30000px 10000px;
+  background-repeat: no-repeat;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 200s linear infinite;
+ }
+
+ @-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+/* flash.css */
+.flash-container {
+  position: absolute;
+  left: 50%;
+  margin-left: -250px;
+  top: 10%;
+  background: white;
+  color: rgb(198, 79, 79);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.09), 0 6px 6px rgba(0,0,0,0.13);
+  width: 500px;
+  height: 50px;
+  text-align: center;
+  z-index: 100;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  font-family: 'Assistant', sans-serif;
+  font-size: 2.5em;
+  letter-spacing: 0.6px;
+}
+
+@media only screen and (max-width: 500px) {
+  .flash-container {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    margin-left: -150px;
+    top: 10%;
+    background: white;
+    color: rgb(198, 79, 79);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    z-index: 100;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    font-family: 'Assistant', sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 0.6px;
+  }
+}
+
+/* list.css */
+.list-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: auto;
+  padding: 20px;
+}
+
+/* nav.css */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:900');
+
+.nav-container {
+  /* border-radius: 50px 20px; */
+  height: 60px;
+  background-color: transparent;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  padding: 10px 40px;
+  font-family: monospace;
+  letter-spacing: 0.6px;
+  border: 22px black;
+
+  
+}
+
+
+
+@keyframes move {
+    0%   {transform: rotate(-10deg);}
+    25%  {transform: rotate(10deg);}
+    50%  {transform: rotate(-10deg);}
+    75%  {transform: rotate(10deg);}
+    100% {margin-left: 0; transform: rotate(-10deg);}
+}
+
+.nav-logo {
+  color: azure;
+  font-size: 2.5em;
+  float: left;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: 'Amatic SC';
+  text-shadow: 20px black;
+  letter-spacing: 5px;
+
+  /* -webkit-animation-name: example; 
+  -webkit-animation-duration: 4s; 
+  animation-name: example;
+  animation-duration: 300s; */
+ 
+}
+
+/* @keyframes example {
+  0%   {color: red;}
+  10%  {color: yellow;}
+  20%  {color: blue;}
+  30% {color: green;}
+  40% {color: greenyellow;}
+  50% {color: darkgoldenrod;}
+  60% {color: crimson;}
+  70% {color: blueviolet;}
+  80% {color: black;}
+  90% {color: orange;}
+  100% {color: white;}
+} */
+
+
+
+.App-logo {
+ block-size: 110%;
+}
+
+.nav-button {
+  border-radius: 50px 20px;
+  font-family: 'Assistant', sans-serif;
+  height: 40px;
+  width: 100px;
+  background: whitesmoke;
+  border-radius: 4px;
+  color: #034f84;
+  float: right;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-right: 10px;
+  margin-top: 6px;
+  border-style: solid;
+  /* border-top-color: #034f84; */
+  border-radius: 2px;
+  padding-top: 7px;
+  text-align: center;
+  transition: box-shadow 0.2s cubic-bezier(.25,.8,.25,1);
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.nav-button:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.09), 0 6px 6px rgba(0,0,0,0.13);
+  color:yellowgreen;
+  background: transparent;
+  border-radius:50%;
+  
+ 
+ 
+}
+
+@media only screen and (max-width: 500px) {
+  .nav-container {
+    height: 60px;
+    background-color: #3498db;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.09), 0 6px 6px rgba(0,0,0,0.13);
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Assistant', sans-serif;
+    letter-spacing: 0.6px;
+  }
+
+  .nav-logo {
+    
+    /* color: black; */
+    font-size: 2em;
+    float: left;
+    cursor: pointer;
+    padding-top: 5px;
+  }
+
+  .nav-button {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 30px;
+    width: 80px;
+    background: transparent;
+    color: #3498db;
+    float: right;
+    font-size: 1em;
+    margin-top: 12px;
+    border-radius: 2px;
+    padding-top: 7px;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+}
+
+/* note-card.css */
+.note-card-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  height: 200px;
+  width: 200px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  padding-top: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: 40px;
+  text-align: left;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  font-family: 'Assistant', sans-serif;
+  border-radius: 4px;
+}
+
+.note-card-container:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.09), 0 6px 6px rgba(0,0,0,0.13);
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.note-card-title {
+  width: 270px;
+  color: white;
+  font-size: 1.25em;
+  font-weight: bold;
+  background: #3498db;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  text-align: center;
+  overflow-y: hidden;
+}
+
+
+
+.note-card-content {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  padding-top: 30px;
+  width: 200px;
+  height: 200px;
+  font-size: 1em;
+  white-space: pre-wrap;
+  overflow: hidden;
+  color: black;
+}
+
+.note-card-delete {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  background: #c0392b;
+  color: white;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  font-size: 1.5em;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+.note-card-delete:hover {
+  background: #e74c3c;
+  color: white;
+  transform: rotate(180deg);
+}
+
+.note-card-edit {
+  float: right;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  color: green;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  font-size: 1.5em;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+.note-card-edit:hover {
+  color: green;
+  transform: rotate(90deg);
+}
+
+@media only screen and (max-width: 500px) {
+  .note-card-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    height: 200px;
+    width: 200px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.12), 0 4px 10px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    text-align: left;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: 'Assistant', sans-serif;
+  }
+
+  .note-card-container:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+}
+
+/*note.css */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+.note-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  border-radius: 2px;
+  -webkit-transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  position: relative;
+  font-family: 'Assistant', sans-serif;
+  width: 100%;
+  height: auto;
+}
+
+.note-form {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+.note-title {
+  background-color: #D79922;
+  padding: 10px;
+}
+
+.note-title-input {
+  /* border-style: solid; */
+  font-size: 1.5em;
+  text-align: center;
+  font-family: 'Assistant', sans-serif;
+  width: 600px;
+  background-color: #EFE2BA;
+  color:black;
+  padding-left: 10px;
+  padding-right: 10px;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.note-title-input::placeholder {
+  color: rgb(15, 13, 13);
+}
+
+.note-title-input:focus {
+  outline: none;
+  border: solid 2px black;
+  background-color: black;
+  color: white;
+}
+
+.note-textarea-container {
+ 
+  background: burlywood;
+  margin: 40px;
+  margin-bottom: 10px;
+  margin-top: 0;
+  padding: 40px;
+}
+
+.note-textarea {
+  background-color: whitesmoke;
+  border: solid 5px black;
+  width: 500px;
+  height: 200px;
+  padding: 30px;
+  border: none;
+  resize: none;
+  border-radius: none;
+  font-family: 'Assistant', sans-serif;
+  font-size: 1.2em;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.note-textarea:focus {
+  outline: black;
+  border-style: solid;
+  border-color: white;
+  background-color: black;
+  color: white;
+}
+
+.note-button {
+  font-family: 'Assistant', sans-serif;
+  font-weight: bold;
+  height: 40px;
+  width: 100px;
+  background: #2980b9;
+  color: white;
+  float: right;
+  font-size: 1.5em;
+  border-radius: 2px;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  margin-top: 10px;
+  border: none;
+}
+
+.note-button:focus {
+  outline: none;
+}
+
+.note-button:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.09), 0 6px 6px rgba(0,0,0,0.13);
+  background-color: whitesmoke;
+  border: solid 4px #2980b9;
+  color: #2980b9;
+  border-radius: 45px;
+ 
+}
+
+@media only screen and (max-width: 700px) {
+
+  .note-title-input {
+    width: 400px;
+    margin-top: 20px;
+    border: none;
+    font-size: 1.5em;
+    text-align: center;
+    border-bottom: 2px solid #3498db;
+    font-family: 'Assistant', sans-serif;
+    background-color: #3498db;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+
+  .note-textarea {
+    width: 360px;
+    height: 200px;
+    border: none;
+    resize: none;
+    box-shadow: 0 3px 9px rgba(0,0,0,0.12), 0 3px 6px rgba(0,0,0,0.24);
+    padding: 30px;
+    margin: 40px;
+    margin-bottom: 10px;
+    margin-top: 0;
+    border-radius: none;
+    font-family: 'Assistant', sans-serif;
+    font-size: 1.1em;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+
+  .note-button {
+    font-family: 'Assistant', sans-serif;
+    height: 40px;
+    width: 100px;
+    background: #3498db;
+    color: white;
+    float: right;
+    font-size: 1.5em;
+    border-radius: 2px;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    margin-top: 10px;
+  }
+
+  .note-button:hover {
+    background: rgb(198, 79, 79);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24);
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+
+  .note-title-input {
+    margin-top: 20px;
+    border: none;
+    font-size: 1.2em;
+    text-align: center;
+    border-bottom: 2px solid #3498db;
+    font-family: 'Assistant', sans-serif;
+    width: 290px;
+    background-color: #3498db;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+
+  .note-textarea {
+    width: 250px;
+    height: 200px;
+    border: none;
+    resize: none;
+    box-shadow: 0 3px 9px rgba(0,0,0,0.12), 0 3px 6px rgba(0,0,0,0.24);
+    padding: 30px;
+    margin: 40px;
+    margin-bottom: 10px;
+    margin-top: 0;
+    border-radius: none;
+    font-family: 'Assistant', sans-serif;
+    font-size: 1em;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+
+  .note-button {
+    font-family: 'Assistant', sans-serif;
+    height: 40px;
+    width: 100px;
+    background: #3498db;
+    color: white;
+    float: right;
+    font-size: 1.5em;
+    border-radius: 2px;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    margin-top: 10px;
+  }
+
+  .note-button:hover {
+    background: rgb(198, 79, 79);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24);
+  }
+
+  .welcome{
+
+    background: black;
+  }
+}
